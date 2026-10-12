@@ -191,5 +191,43 @@
 #SUM of elemts of lists
 #----------------------------------------------------------------------
 
-numbers=[22,43,22,17,93]
-print(sum(numbers))
+# numbers=[22,43,22,17,93]
+# print(sum(numbers))
+
+#----------------------------------------------------------------------
+#TO print Even numbers
+#----------------------------------------------------------------------
+
+# numbers=[22,24,778,43,22,17,93]
+
+# for i in numbers:
+#     if i%2==0:
+#         print(i)
+#         i+=1
+
+#-----------------------------------------------------------------------
+# To count Even numbers
+#-----------------------------------------------------------------------
+
+# A list of numbers to check - mix of even and odd numbers
+numbers = [22, 43, 212, 468, 17, 93]
+
+# Counter starts at zero - we haven't found any even numbers yet
+count = 0
+
+# Look at each number one by one using a for loop
+for i in numbers:
+    # Check if current number is even
+    # The modulo operator (%) gives the remainder after division
+    # If remainder is 0 when divided by 2, it's an even number
+    if i % 2 == 0:
+        # We found an even number, so print it
+        print(i)
+        # Increase counter by 1 (same as: count = count + 1)
+        count += 1
+
+# After checking all numbers, print the total count
+# Expected output: 3 (because 22, 212, 468 are even)
+print(count)
+
+# ------------------------------------------------------------
