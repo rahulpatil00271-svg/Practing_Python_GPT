@@ -206,28 +206,30 @@
 #         i+=1
 
 #-----------------------------------------------------------------------
-# To count Even numbers
+#To count Even numbers
 #-----------------------------------------------------------------------
 
-# A list of numbers to check - mix of even and odd numbers
-numbers = [22, 43, 212, 468, 17, 93]
+# numbers=[22,43,212,468,17,93]
 
-# Counter starts at zero - we haven't found any even numbers yet
-count = 0
+# count=0
+# for i in numbers:
+#     if i%2==0:
+#         print(i)
+#         count+=1 
+# print(count)
 
-# Look at each number one by one using a for loop
+#--------------------------------------------------------------------------
+#To find largest without using max 
+#--------------------------------------------------------------------------
+
+numbers = [12,324,55,56,32,864,211]
+largest = numbers[0]
 for i in numbers:
-    # Check if current number is even
-    # The modulo operator (%) gives the remainder after division
-    # If remainder is 0 when divided by 2, it's an even number
-    if i % 2 == 0:
-        # We found an even number, so print it
-        print(i)
-        # Increase counter by 1 (same as: count = count + 1)
-        count += 1
+    if i > largest:
+        largest = i
+print("The largest number is:", largest)    
 
-# After checking all numbers, print the total count
-# Expected output: 3 (because 22, 212, 468 are even)
-print(count)
+#--------------------------------------------------------------------------
+#
+#--------------------------------------------------------------------------
 
-# ------------------------------------------------------------
